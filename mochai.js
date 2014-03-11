@@ -288,6 +288,9 @@
 
     if (isRequire) {
         define([], function () {
+            if (w.beez) {
+                w.beez.mochai = mochai;
+            }
             return mochai;
         });
     } else {
